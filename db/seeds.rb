@@ -44,21 +44,21 @@ Travelgroup.create(trip_id: 4, traveller_id: 7)
 Travelgroup.create(trip_id: 4, traveller_id: 8)
 
 ## VIKKY
-Flight.create(airline: "Air France", arrival: DateTime.strptime("06/25/2018 19:45", "%m/%d/%Y %H:%M"), departure: DateTime.strptime("06/25/2018 11:05", "%m/%d/%Y %H:%M"), airport: "O'Hare (ORD)", Travelgroup_id: 17)
-Flight.create(airline: "Air France", arrival: DateTime.strptime("06/26/2018 9:55", "%m/%d/%Y %H:%M"), departure: DateTime.strptime("06/26/2018 12:15", "%m/%d/%Y %H:%M"), airport: "Charles de Gaulle (CDG)", Travelgroup_id: 17)
-Flight.create(airline: "Transavia-Delta", arrival: DateTime.strptime("07/05/2018 09:35", "%m/%d/%Y %H:%M"), departure: DateTime.strptime("07/05/2018 14:35", "%m/%d/%Y %H:%M"), airport: "Marrakesh Menara Airport (RAK)", Travelgroup_id: 17)
-Flight.create(airline: "Royal Dutch Airline KLM", arrival: DateTime.strptime("07/05/2018 12:25", "%m/%d/%Y %H:%M"), departure: DateTime.strptime("07/05/2018 13:55", "%m/%d/%Y %H:%M"), airport: "Amsterdam Airport Schiphol (AMS)", Travelgroup_id: 17)
+Flight.create(airline: "Air France", arrival: DateTime.strptime("06/25/2018 19:45", "%m/%d/%Y %H:%M"), departure: DateTime.strptime("06/25/2018 11:05", "%m/%d/%Y %H:%M"), airport: "O'Hare (ORD)", travelgroup_id: 17)
+Flight.create(airline: "Air France", arrival: DateTime.strptime("06/26/2018 9:55", "%m/%d/%Y %H:%M"), departure: DateTime.strptime("06/26/2018 12:15", "%m/%d/%Y %H:%M"), airport: "Charles de Gaulle (CDG)", travelgroup_id: 17)
+Flight.create(airline: "Transavia-Delta", arrival: DateTime.strptime("07/05/2018 09:35", "%m/%d/%Y %H:%M"), departure: DateTime.strptime("07/05/2018 14:35", "%m/%d/%Y %H:%M"), airport: "Marrakesh Menara Airport (RAK)", travelgroup_id: 17)
+Flight.create(airline: "Royal Dutch Airline KLM", arrival: DateTime.strptime("07/05/2018 12:25", "%m/%d/%Y %H:%M"), departure: DateTime.strptime("07/05/2018 13:55", "%m/%d/%Y %H:%M"), airport: "Amsterdam Airport Schiphol (AMS)", travelgroup_id: 17)
 
  ## BASKA
-Flight.create(airline: "Delta", arrival: DateTime.strptime("06/25/2018 9:00", "%m/%d/%Y %H:%M"), departure: DateTime.strptime("06/25/2018 12:18", "%m/%d/%Y %H:%M"), airport: "O'Hare (ORD)", Travelgroup_id: 18)
-Flight.create(airline: "Air France", arrival: DateTime.strptime("06/25/2018 16:20", "%m/%d/%Y %H:%M"), departure: DateTime.strptime("06/25/2018 5:45", "%m/%d/%Y %H:%M"), airport: "John F. Kennedy Airport (JFK)", Travelgroup_id: 18)
-Flight.create(airline: "Air France", arrival: DateTime.strptime("06/26/2018 6:50", "%m/%d/%Y %H:%M"), departure: DateTime.strptime("06/26/2018 9:10", "%m/%d/%Y %H:%M"), airport: "Charles de Gaulle (CDG)", Travelgroup_id: 18)
-Flight.create(airline: "Transavia-Delta", arrival: DateTime.strptime("07/05/2018 09:35", "%m/%d/%Y %H:%M"), departure: DateTime.strptime("07/05/2018 14:35", "%m/%d/%Y %H:%M"), airport: "Marrakesh Menara Airport (RAK)", Travelgroup_id: 18)
-Flight.create(airline: "Royal Dutch Airline KLM", arrival: DateTime.strptime("07/05/2018 12:25", "%m/%d/%Y %H:%M"), departure: DateTime.strptime("07/05/2018 13:55", "%m/%d/%Y %H:%M"), airport: "Amsterdam Airport Schiphol (AMS)", Travelgroup_id: 18)
+Flight.create(airline: "Delta", arrival: DateTime.strptime("06/25/2018 9:00", "%m/%d/%Y %H:%M"), departure: DateTime.strptime("06/25/2018 12:18", "%m/%d/%Y %H:%M"), airport: "O'Hare (ORD)", travelgroup_id: 18)
+Flight.create(airline: "Air France", arrival: DateTime.strptime("06/25/2018 16:20", "%m/%d/%Y %H:%M"), departure: DateTime.strptime("06/25/2018 5:45", "%m/%d/%Y %H:%M"), airport: "John F. Kennedy Airport (JFK)", travelgroup_id: 18)
+Flight.create(airline: "Air France", arrival: DateTime.strptime("06/26/2018 6:50", "%m/%d/%Y %H:%M"), departure: DateTime.strptime("06/26/2018 9:10", "%m/%d/%Y %H:%M"), airport: "Charles de Gaulle (CDG)", travelgroup_id: 18)
+Flight.create(airline: "Transavia-Delta", arrival: DateTime.strptime("07/05/2018 09:35", "%m/%d/%Y %H:%M"), departure: DateTime.strptime("07/05/2018 14:35", "%m/%d/%Y %H:%M"), airport: "Marrakesh Menara Airport (RAK)", travelgroup_id: 18)
+Flight.create(airline: "Royal Dutch Airline KLM", arrival: DateTime.strptime("07/05/2018 12:25", "%m/%d/%Y %H:%M"), departure: DateTime.strptime("07/05/2018 13:55", "%m/%d/%Y %H:%M"), airport: "Amsterdam Airport Schiphol (AMS)", travelgroup_id: 18)
 
 
 ## MELISSA
-Flight.create(airline: "Delta", arrival: DateTime.strptime("06/25/2018 9:18", "%m/%d/%Y %H:%M"), departure: DateTime.strptime("06/25/2018 11:05", "%m/%d/%Y %H:%M"), airport: "O'Hare (ORD)", Travelgroup_id: 19)
-Flight.create(airline: "Delta", arrival: DateTime.strptime("06/26/2018 12:05", "%m/%d/%Y %H:%M"), departure: DateTime.strptime("06/26/2018 5:15", "%m/%d/%Y %H:%M"), airport: "Logan International(BOS)", Travelgroup_id: 19)
-Flight.create(airline: "Transavia-Delta", arrival: DateTime.strptime("07/05/2018 09:35", "%m/%d/%Y %H:%M"), departure: DateTime.strptime("07/05/2018 14:35", "%m/%d/%Y %H:%M"), airport: "Marrakesh Menara Airport (RAK)", Travelgroup_id: 19)
-Flight.create(airline: "Royal Dutch Airline KLM", arrival: DateTime.strptime("07/05/2018 12:25", "%m/%d/%Y %H:%M"), departure: DateTime.strptime("07/05/2018 13:55", "%m/%d/%Y %H:%M"), airport: "Amsterdam Airport Schiphol (AMS)", Travelgroup_id: 19)
+Flight.create(airline: "Delta", arrival: DateTime.strptime("06/25/2018 9:18", "%m/%d/%Y %H:%M"), departure: DateTime.strptime("06/25/2018 11:05", "%m/%d/%Y %H:%M"), airport: "O'Hare (ORD)", travelgroup_id: 19)
+Flight.create(airline: "Delta", arrival: DateTime.strptime("06/26/2018 12:05", "%m/%d/%Y %H:%M"), departure: DateTime.strptime("06/26/2018 5:15", "%m/%d/%Y %H:%M"), airport: "Logan International(BOS)", travelgroup_id: 19)
+Flight.create(airline: "Transavia-Delta", arrival: DateTime.strptime("07/05/2018 09:35", "%m/%d/%Y %H:%M"), departure: DateTime.strptime("07/05/2018 14:35", "%m/%d/%Y %H:%M"), airport: "Marrakesh Menara Airport (RAK)", travelgroup_id: 19)
+Flight.create(airline: "Royal Dutch Airline KLM", arrival: DateTime.strptime("07/05/2018 12:25", "%m/%d/%Y %H:%M"), departure: DateTime.strptime("07/05/2018 13:55", "%m/%d/%Y %H:%M"), airport: "Amsterdam Airport Schiphol (AMS)", travelgroup_id: 19)

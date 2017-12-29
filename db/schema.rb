@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20171229070219) do
   create_table "flights", force: :cascade do |t|
     t.string "airline"
     t.datetime "arrival"
-    t.string "departure"
+    t.datetime "departure"
     t.string "airport"
     t.integer "travelgroup_id"
     t.integer "traveller_id"
@@ -54,7 +54,10 @@ ActiveRecord::Schema.define(version: 20171229070219) do
     t.decimal "budget"
     t.date "start_date"
     t.date "end_date"
+    t.date "start_date_formatted"
+    t.date "end_date_formatted"
     t.integer "organizer_id"
+    t.string "organizer_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

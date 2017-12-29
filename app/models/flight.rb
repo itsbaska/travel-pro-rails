@@ -1,6 +1,5 @@
 class Flight < ApplicationRecord
 
-  self.abstract_class = true 
 
   belongs_to :travelgrouping
   has_one :traveller, through: :travelgrouping
