@@ -9,10 +9,10 @@ class SessionsController < ApplicationController
 
     if @user && @user.authenticate(params[:password])
       session[:user_id] = @user.id
-
-      redirect_to user_dashboard_path(@user)
+      redirect_to root_path
     else
-      invalid_login
+      @errors = ["Either your username or password were incorrect"]
+      render 'new'
     end
   end
 
@@ -24,10 +24,6 @@ class SessionsController < ApplicationController
   end
 
   private
-
-  def invalid_login
-     render component: 'Login', props: { errors: "Invalid e-mail or password. Please try again!" }
-  end
 
   def user_params
     params.permit(:email, :password)
