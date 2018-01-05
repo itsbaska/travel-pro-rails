@@ -29,6 +29,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'webpacker', '~> 3.0'
 
+gem  'extra_print'
+
 gem 'bcrypt'
 gem 'paperclip'
 gem 'cloudinary'

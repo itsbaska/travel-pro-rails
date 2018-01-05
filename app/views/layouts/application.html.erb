@@ -9,6 +9,24 @@
   </head>
 
   <body>
+     <nav>
+        <ul>
+          <li><%= link_to "Home", root_path %></li>
+         <% if logged_in? %>
+          <li><%= link_to "Create Trip", new_trip_path %></li>
+          <li><%= link_to"#{current_user.first_name}", user_path(current_user) %></li>
+        <% end %>
+        </ul>
+        <% if logged_in? %>
+          <button class="button"><%= link_to "Logout", logout_path, method: :delete %></button>
+        <% else %>
+          <button class="button"><%= link_to "Register", new_user_path %></button>
+          <button class="button"><%= link_to "Login", login_path %></button>
+        <% end %>
+    </nav>
+    <h1>Travel Pro</h1>
     <%= yield %>
   </body>
+  <footer>© Designed & Developed by Baska Batbold.</footer>
+
 </html>

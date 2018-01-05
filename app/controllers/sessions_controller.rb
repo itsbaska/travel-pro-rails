@@ -9,25 +9,21 @@ class SessionsController < ApplicationController
 
     if @user && @user.authenticate(params[:password])
       session[:user_id] = @user.id
-
-      redirect_to user_dashboard_path(@user)
+      redirect_to root_path
     else
-      invalid_login
+      @errors = ["Either your username or password were incorrect"]
+      render 'new'
     end
   end
 
   def destroy
     session[:user_id] = nil
     reset_session
-    @current_user = nil
-    redirect_to root_path, status: 303
+    current_user = nil
+    redirect_to login_path, status: 303
   end
 
   private
-
-  def invalid_login
-     render component: 'Login', props: { errors: "Invalid e-mail or password. Please try again!" }
-  end
 
   def user_params
     params.permit(:email, :password)
