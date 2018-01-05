@@ -15,6 +15,10 @@ class UsersController < ApplicationController
     end
   end
 
+  def show
+    authenticate!
+  end
+
   private
 
   def user_params
