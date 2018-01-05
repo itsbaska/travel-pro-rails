@@ -1,1 +1,15 @@
-show.html.erb
+<div class="main-content">
+  <h2 class="secondary-title">Trips organized by <%= @user.full_name  %></h2>
+  <ul>
+  <% @organized_trips.each do |trip| %>
+    <li><%= link_to trip.name, trip_path(trip) %></li>
+  <% end %>
+  </ul>
+
+  <h2 class="secondary-title">Trips <%= @user.full_name %> is attending</h2>
+  <ul>
+  <% @travelling_trips.each do |trip| %>
+    <li><%= link_to trip.name, trip_path(trip) %></li>
+  <% end %>
+</ul>
+</div>
