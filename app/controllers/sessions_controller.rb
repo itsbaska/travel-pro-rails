@@ -19,7 +19,7 @@ class SessionsController < ApplicationController
   def destroy
     session[:user_id] = nil
     reset_session
-    @current_user = nil
+    current_user = nil
     redirect_to login_path, status: 303
   end
 
